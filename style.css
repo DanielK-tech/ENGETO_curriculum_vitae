@@ -1,0 +1,165 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif;
+} 
+
+body { 
+    min-height: 100vh;
+    display: flex; 
+    /* justify-content: center;  */
+    align-items: center; 
+    flex-direction: column;
+    background: #bdb7b7;
+} 
+/*************************************************************************/ 
+/************************************************************************/
+/* barvičky a velikosti */
+:root { 
+    --special_blue: #0c49f1;
+    --special_underline: #645f5f ;
+    --text_color: rgb(255,255,255); 
+    --text_table_grey: grey ;
+    --border_color: rgba(105, 101, 101, 0.5) ; /**/
+        /** velikosti */
+    --hl_divy: 800px;
+    --td_size: 0.8em;
+    --hr_size: 700px;
+} 
+
+/*hlavní kontejner */ 
+#container { 
+    background-color: #fff; 
+    
+}
+
+/*** buňky v table */ 
+.grey-text { 
+    color: var(--text_table_grey);
+    font-size: var(--td_size);
+} 
+
+/** h2 v životopise **/
+.title_h2 { 
+    color: var(--special_blue);
+
+} 
+
+/** podtrhnutí po sekcích */
+.section_border { 
+    width: var(--hr_size); 
+    margin: 10px auto;
+    border: 1px solid var(--border_color);
+
+    
+} 
+
+/******************* Tabulky v segmentech ******/ 
+
+.tables_in_segments { 
+    text-align: left; 
+    line-height: 1.5; 
+    /* margin: 0 auto; */
+} 
+
+.title_in_segments { 
+    color: var(--special_blue);
+    font-weight: bold;
+}
+/** p v tabulkách */
+.bottom-mark { 
+    margin-bottom: 10px;
+}
+/***********************************************************************/
+/**************************************************************************/
+hr { 
+    border: 1px solid var(--special_underline);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+}  
+ /** paragrafy v hlavičce */
+.white { 
+    color: var(--text_color);
+    letter-spacing: 1px; 
+    line-height: 1.5; /** mezera mezi řádky *****/
+} 
+
+/*** mezera pro první segment pod hlavičkou ***/
+.marginer { 
+    margin-top: 30px;
+}
+
+/** třída pro info v hlavičce */
+.another {     
+    margin-left: 175px;    
+} 
+
+/********************************************************************/
+/***********************************************************************/ 
+
+#pohoto-of-me { 
+    width: 120px; 
+    border-radius: 50%;
+}
+/************* first div *****************/
+#basic { 
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    /* justify-content: center; */
+    background-color: var(--special_blue);
+    width: var(--hl_divy);
+    padding: 10px;
+}  
+
+/** h1 moje jmeno */ 
+#name { 
+   /* margin: 0 auto; */ /*zarovnání na střed */   
+    color: var(--text_color);                
+}
+/***************** segment div *******************/ 
+
+.segment { 
+    width: 185px;
+    text-align: center;
+    /* background-color: red;  */
+    
+} 
+
+/***************** info div ************/ 
+.info { 
+    position: absolute;
+    top: 70px ;
+    left: 195px;
+} 
+/*******************************************************************
+**************** Tělo čivotopisu ***************************************************
+*******************************************************************/ 
+.segmenty { 
+    display: flex;
+    flex-direction: row;
+    width: var(--hl_divy); 
+    margin-bottom: 10px;
+    
+} 
+
+/*** tabulka se vzděláním */ 
+
+#education-table { 
+    text-align: left; 
+    line-height: 1.5;
+    /* margin: 0 auto; */
+} 
+
+#school-title { 
+    color: var(--special_blue); 
+    font-weight: bold;
+}
+
+/*************************************************************
+************* Druhý segment **********************************
+/ 
+
+
