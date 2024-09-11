@@ -1,0 +1,182 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body { 
+    background-color: var(--body-Color);
+    display: flex; 
+    justify-content: center;
+    font-family: sans-serif;
+} 
+
+/******** barvičky a velikosti ********************************/
+:root { 
+    --body-Color: #333131;
+    --container-div-color: #fff;
+    --discount-color: red;
+    --color-white: #fff;
+    --span-color-one:rgb(236, 236, 7);
+    --price-color:rgba(206, 73, 73, 0.63);
+    /*velikosti*/
+    --text-span-size: 25px;
+    --border-radius-span: 0 5px 5px 0;
+    --border-radius-div: 5px;
+    --font-weight: bold;
+}
+
+/******************************************************************/
+
+/*hlavní div */
+#container-product { 
+    background-color: var(--container-div-color);
+    margin-top: 1%;
+     width: 650px; 
+   
+
+} 
+/*****************************************************************/
+
+/*************** spany *********************/
+
+/*span se slevou */
+#discount { 
+    display: inline-block;
+    position: absolute;
+    background-color: var(--discount-color);
+    width: 75px;
+    height: 75px; 
+    border-radius: 50%;
+    font-weight: var(--font-weight);
+    text-align: center;
+    line-height: 70px;    /*zarovnání na střed*/
+    top: 20px; 
+    left: 85%;
+    font-size: var(--text-span-size);    
+    color: var(--color-white);    
+} 
+
+/******** span s bestseller **********/
+.bestseller { 
+    position: absolute;
+    font-weight: var(--font-weight);
+    margin-top: 25px;
+    padding: 5px 20px 5px 15px;    
+    font-size: var(--text-span-size); 
+    background-color: var(--span-color-one);
+    border-radius: var(--border-radius-span);
+} 
+
+/* span produkt roku */ 
+.product-of-year{ 
+    position: absolute;
+    top: 100px; 
+    background-color: var(--discount-color);
+    color: var(--color-white);
+    font-size: var(--text-span-size);
+    padding: 5px 20px 5px 40px;
+    border-radius: var(--border-radius-span);
+    font-weight: var(--font-weight);
+    z-index: 1;
+}
+
+/********************************************************************/
+/*****obrázek ************/ 
+
+/*div obrázku */
+ #notebook-div { 
+    position: relative;
+} 
+
+
+/*********************************************************************/
+
+/*text + h1 */
+ 
+h1 { 
+    text-align: center;
+    
+} 
+/*paragraf*/
+.description-product { 
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 10px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    margin-top: 0; 
+    margin-bottom: 28px;
+} 
+/******************************************************************/ 
+
+/** div s cenami a tlačítkem*/ 
+.price-spare-div { 
+    background-color: var(--price-color);
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 90%; 
+    border-radius: var(--border-radius-div);
+}  
+
+
+/*span cena */
+.price { 
+    display: block;    
+    margin-bottom: 5px; 
+    font-weight: var(--font-weight);
+    font-size: 40px;
+} 
+
+/*span ušetříte */ 
+.spare { 
+    font-weight: var(--font-weight);
+    font-size: 25px;
+} 
+
+/*tlačítko do košíku */
+.buy-button{ 
+    position: absolute;
+    width: 140px;   
+    padding: 5px;
+    bottom: 30%; 
+    left: 70%; 
+    font-size: 25px;
+    font-weight: var(--font-weight);
+    border-radius: var(--border-radius-div);
+    transition: 0.5s;
+} 
+
+.buy-button:hover{ 
+    cursor: pointer;
+    background-color: #d4cdcd;
+} 
+/********************************************************************/ 
+
+/*poslední div */ 
+.post-info{ 
+    text-align: left;
+    margin: 0 auto;
+    width: 90%; 
+    background-color: greenyellow; 
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius-div);
+} 
+
+/*span*/ 
+.info{ 
+    font-size: 20px;
+    font-weight: var(--font-weight);
+    color: green;
+} 
+
+/*odkaz*/
+.information{ 
+    margin-left: 20%;
+    font-weight: var(--font-weight);
+    font-size: 20px;
+    color: green;
+}
