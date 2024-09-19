@@ -1,47 +1,63 @@
-* { 
-    padding: 0; 
-    margin: 0; 
-    box-sizing: border-box; 
-    font-family: sans-serif;
-} 
-
-body { 
-    min-height: 100vh;
-    display: flex; 
-    /* justify-content: center;  */
-    align-items: center; 
-    flex-direction: column;
-    background: #bdb7b7;
-} 
-
-#cv { 
-    margin-top: 10px;
-}
-/*************************************************************************/ 
-/************************************************************************/
 /* barvičky a velikosti */
 :root { 
     --special_blue: #0c49f1;
     --special_underline: #645f5f ;
     --text_color: rgb(255,255,255); 
     --text_table_grey: grey ;
-    --border_color: rgba(105, 101, 101, 0.5) ; /**/
+    --border_color: rgba(105, 101, 101, 0.5) ; /**/ 
+    --body-background:#bdb7b7;
         /** velikosti */
     --hl_divy: 800px;
     --td_size: 0.8em;
     --hr_size: 700px; 
 } 
 
-/*hlavní kontejner */ 
-#container { 
-    background-color: #fff; 
-    
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;    
+} 
+
+body {     
+    display: flex;     
+    align-items: center; 
+    flex-direction: column;
+    background-color: var(--body-background); 
+    font-family: sans-serif;
+}  
+@media only screen and (min-width: 820px) { 
+    body { 
+        min-height: 100vh;
+    }
 }
 
-/*** buňky v table */ 
-.grey-text { 
-    color: var(--text_table_grey);
-    font-size: var(--td_size);
+.curriculum { 
+    margin-top: 10px;
+} 
+/******************************************/
+/******************************************/
+
+/** opakující se třída **/ 
+.segmenty { 
+    display: flex;
+    flex-direction: row;
+    width: var(--hl_divy); 
+    margin-bottom: 10px;    
+}  
+/** div segment **/
+.segment { 
+    width: 185px;
+    text-align: center;       
+} 
+
+
+/*************************************************************************/ 
+/************************************************************************/
+
+/*hlavní kontejner */ 
+.Main-container { 
+    background-color: var(--text_color); 
+    
 } 
 
 /** h2 v životopise **/
@@ -54,23 +70,26 @@ body {
 .section_border { 
     width: var(--hr_size); 
     margin: 10px auto;
-    border: 1px solid var(--border_color);
-
-    
+    border: 1px solid var(--border_color);    
 } 
 
 /******************* Tabulky v segmentech ******/ 
 
 .tables_in_segments { 
     text-align: left; 
-    line-height: 1.5; 
-    /* margin: 0 auto; */
+    line-height: 1.5;     
 } 
 
 .title_in_segments { 
     color: var(--special_blue);
     font-weight: bold;
-}
+} 
+
+/*** buňky v table */ 
+.grey-text { 
+    color: var(--text_table_grey);
+    font-size: var(--td_size);
+} 
 /** p v tabulkách */
 .bottom-mark { 
     margin-bottom: 10px;
@@ -102,68 +121,39 @@ hr {
 
 /********************************************************************/
 /***********************************************************************/ 
-
-#pohoto-of-me { 
-    width: 120px; 
-    border-radius: 50%;
-}
-/************* first div *****************/
-#basic { 
+.basic-information{ 
     position: relative;
     display: flex;
-    flex-direction: row; 
-    /* justify-content: center; */
+    flex-direction: row;     
     background-color: var(--special_blue);
     width: var(--hl_divy);
     padding: 10px;
 }  
 
+.img-of-me { 
+    width: 120px; 
+    border-radius: 50%;
+}
+/************* first div *****************/
+
 /** h1 moje jmeno */ 
-#name { 
-   /* margin: 0 auto; */ /*zarovnání na střed */   
+.my-name {      
     color: var(--text_color);                
 }
-/***************** segment div *******************/ 
-
-.segment { 
-    width: 185px;
-    text-align: center;
-    /* background-color: red;  */
-    
-} 
-
 /***************** info div ************/ 
 .info { 
     position: absolute;
     top: 70px ;
     left: 195px;
 } 
-/*******************************************************************
-**************** Tělo čivotopisu ***************************************************
-*******************************************************************/ 
-.segmenty { 
-    display: flex;
-    flex-direction: row;
-    width: var(--hl_divy); 
-    margin-bottom: 10px;
-    
-} 
-
-/*** tabulka se vzděláním */ 
-
-#education-table { 
-    text-align: left; 
-    line-height: 1.5;
-    /* margin: 0 auto; */
-} 
-
-#school-title { 
-    color: var(--special_blue); 
-    font-weight: bold;
-}
 
 /*************************************************************
-************* Druhý segment **********************************
-/ 
+************* footer ***********************************/
+
+footer { 
+    margin-top: 1%;
+}
+
+
 
 

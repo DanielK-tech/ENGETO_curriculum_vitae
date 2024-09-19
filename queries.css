@@ -1,0 +1,12 @@
+
+
+@media only screen and (max-width: 600px){ 
+    /** první sekce **/
+    .basic-information { 
+        /* width: 90%; */
+    } 
+
+    .Main-container{ 
+        /* width: 90%; */
+    }
+}
