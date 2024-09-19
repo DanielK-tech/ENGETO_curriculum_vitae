@@ -62,13 +62,13 @@ body {
 } 
 
 /** h2 v životopise **/
-.title_h2 { 
+.title-h2 { 
     color: var(--special_blue);
 
 } 
 
 /** podtrhnutí po sekcích */
-.section_border { 
+.section-border { 
     width: var(--hr_size); 
     margin: 10px auto;
     border: 1px solid var(--border_color);    
@@ -76,12 +76,12 @@ body {
 
 /******************* Tabulky v segmentech ******/ 
 
-.tables_in_segments { 
+.tables-in-segments { 
     text-align: left; 
     line-height: 1.5;     
 } 
 
-.title_in_segments { 
+.title-in-segments { 
     color: var(--special_blue);
     font-weight: bold;
 } 
