@@ -9,15 +9,7 @@
     .curriculum{ 
         display: flex; 
         justify-content: center;
-    } 
-
-    /*** podtržítko ***/
-    .cv-hr { 
-        display: flex; 
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+    }   
 
     /** první sekce **/
     .basic-information-of-me { 
