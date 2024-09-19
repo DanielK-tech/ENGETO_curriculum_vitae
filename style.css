@@ -1,160 +1,152 @@
 /* barvičky a velikosti */
-:root { 
-    --special_blue: #0c49f1;
-    --special_underline: #645f5f ;
-    --text_color: rgb(255,255,255); 
-    --text_table_grey: grey ;
-    --border_color: rgba(105, 101, 101, 0.5) ; /**/ 
-    --body-background:#bdb7b7;
-        /** velikosti */
-    --hl_divy: 800px;
-    --td_size: 0.8em;
-    --hr_size: 700px; 
-} 
-
-* { 
-    padding: 0; 
-    margin: 0; 
-    box-sizing: border-box;    
-} 
-
-body {     
-    
-    background-color: var(--body-background); 
-    font-family: sans-serif;
-}  
-@media only screen and (min-width: 820px) { 
-    body { 
-        display: flex;     
-        align-items: center; 
-        flex-direction: column;
-        min-height: 100vh;
-    }
+:root {
+  --special_blue: #0c49f1;
+  --special_underline: #645f5f;
+  --text_color: rgb(255, 255, 255);
+  --text_table_grey: grey;
+  --border_color: rgba(105, 101, 101, 0.5); /**/
+  --body-background: #bdb7b7;
+  /** velikosti */
+  --hl_divy: 800px;
+  --td_size: 0.8em;
+  --hr_size: 700px;
 }
 
-.curriculum { 
-    margin-top: 10px;
-} 
-/******************************************/
-/******************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-/** opakující se třída **/ 
-.segmenty { 
+body {
+  background-color: var(--body-background);
+  font-family: sans-serif;
+}
+@media only screen and (min-width: 820px) {
+  body {
     display: flex;
-    flex-direction: row;
-    width: var(--hl_divy); 
-    margin-bottom: 10px;    
-}  
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.curriculum {
+  margin-top: 10px;
+}
+/******************************************/
+/******************************************/
+
+/** opakující se třída **/
+.segmenty {
+  display: flex;
+  flex-direction: row;
+  width: var(--hl_divy);
+  margin-bottom: 10px;
+}
 /** div segment **/
-.segment { 
-    width: 185px;
-    text-align: center;       
-} 
+.segment {
+  width: 185px;
+  text-align: center;
+}
 
-
-/*************************************************************************/ 
+/*************************************************************************/
 /************************************************************************/
 
-/*hlavní kontejner */ 
-.Main-container { 
-    background-color: var(--text_color); 
-    
-} 
+/*hlavní kontejner */
+.Main-container {
+  background-color: var(--text_color);
+}
 
 /** h2 v životopise **/
-.title-h2 { 
-    color: var(--special_blue);
-
-} 
+.title-h2 {
+  color: var(--special_blue);
+}
 
 /** podtrhnutí po sekcích */
-.section-border { 
-    width: var(--hr_size); 
-    margin: 10px auto;
-    border: 1px solid var(--border_color);    
-} 
+.section-border {
+  width: var(--hr_size);
+  margin: 10px auto;
+  border: 1px solid var(--border_color);
+}
 
-/******************* Tabulky v segmentech ******/ 
+/******************* Tabulky v segmentech ******/
 
-.tables-in-segments { 
-    text-align: left; 
-    line-height: 1.5;     
-} 
+.tables-in-segments {
+  text-align: left;
+  line-height: 1.5;
+}
 
-.title-in-segments { 
-    color: var(--special_blue);
-    font-weight: bold;
-} 
+.title-in-segments {
+  color: var(--special_blue);
+  font-weight: bold;
+}
 
-/*** buňky v table */ 
-.grey-text { 
-    color: var(--text_table_grey);
-    font-size: var(--td_size);
-} 
+/*** buňky v table */
+.grey-text {
+  color: var(--text_table_grey);
+  font-size: var(--td_size);
+}
 /** p v tabulkách */
-.bottom-mark { 
-    margin-bottom: 10px;
+.bottom-mark {
+  margin-bottom: 10px;
 }
 /***********************************************************************/
 /**************************************************************************/
-hr { 
-    border: 1px solid var(--special_underline);
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 80%;
-}  
- /** paragrafy v hlavičce */
-.white { 
-    color: var(--text_color);
-    letter-spacing: 1px; 
-    line-height: 1.5; /** mezera mezi řádky *****/
-} 
+hr {
+  border: 1px solid var(--special_underline);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+/** paragrafy v hlavičce */
+.white {
+  color: var(--text_color);
+  letter-spacing: 1px;
+  line-height: 1.5; /** mezera mezi řádky *****/
+}
 
 /*** mezera pro první segment pod hlavičkou ***/
-.marginer { 
-    margin-top: 30px;
+.marginer {
+  margin-top: 30px;
 }
 
 /** třída pro info v hlavičce */
-.another {     
-    margin-left: 175px;    
-} 
+.another {
+  margin-left: 175px;
+}
 
 /********************************************************************/
-/***********************************************************************/ 
-.basic-information{ 
-    position: relative;
-    display: flex;
-    flex-direction: row;     
-    background-color: var(--special_blue);
-    width: var(--hl_divy);
-    padding: 10px;
-}  
+/***********************************************************************/
+.basic-information {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--special_blue);
+  width: var(--hl_divy);
+  padding: 10px;
+}
 
-.img-of-me { 
-    width: 120px; 
-    border-radius: 50%;
+.img-of-me {
+  width: 120px;
+  border-radius: 50%;
 }
 /************* first div *****************/
 
-/** h1 moje jmeno */ 
-.my-name {      
-    color: var(--text_color);                
+/** h1 moje jmeno */
+.my-name {
+  color: var(--text_color);
 }
-/***************** info div ************/ 
-.info { 
-    position: absolute;
-    top: 70px ;
-    left: 195px;
-} 
+/***************** info div ************/
+.info {
+  position: absolute;
+  top: 70px;
+  left: 195px;
+}
 
 /*************************************************************
 ************* footer ***********************************/
 
-footer { 
-    margin-top: 1%;
+footer {
+  margin-top: 1%;
 }
-
-
-
-

@@ -1,78 +1,74 @@
+@media only screen and (max-width: 600px) {
+  :root {
+    --hl_divy: 100%;
+    --hr_size: 85%;
+  }
+  /*** nadpis ***/
+  .curriculum {
+    display: flex;
+    justify-content: center;
+  }
 
+  /** první sekce **/
+  .basic-information-of-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /** obalující div  **/
+  .basic-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+  }
+  /** fotka moje **/
+  /* .img-of-me {
+    margin-right: 0%;
+  } */
 
-@media only screen and (max-width: 600px){ 
-    :root { 
-        --hl_divy: 100%;
-        --hr_size: 85%;
-    } 
-    /*** nadpis ***/
-    .curriculum{ 
-        display: flex; 
-        justify-content: center;
-    }   
+  /**  tabulky v segmentech **/
+  .tables-in-segments {
+    text-align: center;
+  }
 
-    /** první sekce **/
-    .basic-information-of-me { 
-        display: flex;
-        flex-direction: column; 
-        width: 100%;
-    }  
-        /** obalující div  **/
-    .basic-information{ 
-        display: flex;
-        flex-direction: column; 
-        width: 100%;
-        padding: 1%;
-    } 
-    /** fotka moje **/
-    .img-of-me{ 
-       margin-right: 75% ; 
-    } 
+  .segment {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 10px;
+  }
 
-    /**  tabulky v segmentech **/
-    .tables-in-segments { 
-        text-align: center;
-    }
+  /** info o mě (hlavička)*/
+  .info {
+    position: relative;
+    width: fit-content;
+    top: 10px;
+    left: 16px;
+  }
 
+  .another {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  /*** h1 ***/
+  .my-name {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
 
-    .segment{ 
-        display: flex; 
-        justify-content: center;
-        width: 100%; 
-        margin-left: 10px;
-    } 
+  /** segmenty ***/
+  .segmenty {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    /** info o mě (hlavička)*/
-    .info{ 
-        position: relative;
-        top: 10px;
-        left: 16px;
-    }
-
-    .another{ 
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    /*** h1 ***/
-    .my-name { 
-        position: absolute;
-        left: 45%;
-        top: 20%;
-    }  
-
-    /** segmenty ***/ 
-    .segmenty{ 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-    /*** footer ***/
-    footer { 
-        display: flex; 
-        justify-content: center;
-        padding-bottom: 1%;
-    }
-    
+  /*** footer ***/
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+  }
 }
