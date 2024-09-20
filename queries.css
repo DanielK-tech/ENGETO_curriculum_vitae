@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   :root {
     --hl_divy: 100%;
     --hr_size: 85%;
@@ -21,11 +21,7 @@
     flex-direction: column;
     width: 100%;
     padding: 1%;
-  }
-  /** fotka moje **/
-  /* .img-of-me {
-    margin-right: 0%;
-  } */
+  } 
 
   /**  tabulky v segmentech **/
   .tables-in-segments {
@@ -71,4 +67,54 @@
     justify-content: center;
     padding-bottom: 1%;
   }
+} 
+
+/***** tablety *****/ 
+@media only screen and (min-width: 820px) and (max-width: 1022px){ 
+    *{ 
+        font-size: 1.1em;
+    } 
+    .basic-information-of-me { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }    
+
+    .info-container{ 
+        display: flex; 
+        flex-direction: column;             
+        align-items: center;
+    } 
+
+    .info{ 
+        width: 70%;
+        /* justify-content: flex-start;     */
+    } 
+
+    .another { 
+        margin: 0;
+        
+    }
+
+    .my-name{ 
+        width: 100%;        
+        position: relative;      
+        left: 0;   
+        margin: 0;  
+    }    
+
+    .segment{  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+    } 
+
+     /** fotka moje **/
+  .img-of-me { 
+    margin: 0 auto;
+    width: 30%;
+  }
+
+      
 }

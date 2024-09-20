@@ -22,12 +22,12 @@ body {
   background-color: var(--body-background);
   font-family: sans-serif;
 }
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 1024px) {
   body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 }
 
@@ -135,7 +135,10 @@ hr {
 
 /** h1 moje jmeno */
 .my-name {
-  color: var(--text_color);
+  color: var(--text_color); 
+  position: absolute;
+  top: 10%; 
+  left: 25%;
 }
 /***************** info div ************/
 .info {
