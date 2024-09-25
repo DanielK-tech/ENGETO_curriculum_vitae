@@ -135,9 +135,9 @@ hr {
 
 /** h1 moje jmeno */
 .my-name {
-  color: var(--text_color); 
+  color: var(--text_color);
   position: absolute;
-  top: 10%; 
+  top: 10%;
   left: 25%;
 }
 /***************** info div ************/
